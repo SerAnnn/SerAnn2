@@ -18,6 +18,21 @@ class MainController extends Controller
         return view('about');
     }
 
+    public function user()
+    {
+        return view('user');
+    }
+
+    public function login()
+    {
+        return view('login');
+    }
+    public function register()
+    {
+        return view('register');
+    }
+
+
     public function review()
     {
         $reviews = new Contact();

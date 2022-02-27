@@ -23,7 +23,9 @@
             <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                 <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная</a>
                 <a class="me-3 py-2 text-dark text-decoration-none" href="/about">о нас </a>
-                <a class="me-3 py-2 text-dark text-decoration-none" href="#">контакты </a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="/login">Вход</a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="/register">Регистрация</a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="/user">User</a>
                 <a class="py-2 text-dark text-decoration-none" href="/review">Отзывы</a>
             </nav>
 
@@ -31,6 +33,9 @@
     </div>
 
     <div class="container">
+        <br>
+        <h1>@yield('h1')</h1>
+        <br>
         @yield('main-content')
     </div>
 

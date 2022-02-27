@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'home']);
 Route::get('/about', [MainController::class, 'about']);
+Route::get('/user', [MainController::class, 'user']);
+Route::get('/login', [MainController::class, 'login']);
+Route::get('/register', [MainController::class, 'register']);
 Route::get('/review', [MainController::class, 'review'])->name('review');
 Route::post('/review/check', [MainController::class, 'review_check']);
 
