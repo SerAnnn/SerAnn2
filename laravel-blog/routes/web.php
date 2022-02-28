@@ -25,3 +25,7 @@ Route::post('/review/check', [MainController::class, 'review_check']);
 // Route::get('/user/{id}/{name}', function ($id, $name) {
 //     return 'ID ' . $id . 'name' . $name;
 // });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
