@@ -29,11 +29,15 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="/about">о нас </a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="/user">User</a>
+                <a class="py-2 text-dark text-decoration-none" href="/review">Отзывы</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
 
@@ -85,6 +89,13 @@
             @yield('content')
         </main>
     </div>
+    <div class="container">
+        <br>
+        <h1>@yield('h1')</h1>
+        <br>
+        @yield('main-content')
+    </div>
+
 </body>
 
 </html>
